@@ -20,8 +20,9 @@ p_load(raster,
 # set directory for your conda environment
 ## Change this to your environment directory as it was installed in the rgee_install_packages 
 ## if you forgot environment name, open anaconda prompt in windows, type in: conda env list
-rgee_environment_dir = "C:\\ProgramData\\Miniconda3\\envs\\rgee_py\\"
-
+#rgee_environment_dir = "C:\\ProgramData\\Miniconda3\\envs\\rgee_py\\"
+rgee_environment_dir = "C:/Users/n_ram/.conda/envs/matlab_py_env/"
+#Sys.setenv(RETICULATE_PYTHON = "C:/Users/n_ram/.conda/envs/matlab_py_env/python.exe")
 
 
 # initiate RGEE --------------------------------------------------------------------
@@ -40,17 +41,19 @@ p_load(raster,
        caret)
 
 # now some more specific packages related to using the rgee
+Sys.setenv(RETICULATE_PYTHON = "C:/Users/n_ram/.conda/envs/matlab_py_env/python.exe")
+
 p_load(rgee, geojsonio, remotes, reticulate, devtools, googledrive)
-install_github("r-spatial/rgee")
+# install_github("r-spatial/rgee")
 
 ## sometimes at this point you are required to restart R or the computer before proceeding
 ## try restarting if the installation do not finish properly and run the installation again after restar
 
 # set python
-reticulate::use_python(rgee_environment_dir, required=T)
+# reticulate::use_python(rgee_environment_dir, required=T)
 rgee::ee_install_set_pyenv(
   py_path = rgee_environment_dir, # Change it for your own Python PATH
-  py_env = "rgee_py" # Change it for your own Python ENV
+  py_env = "matlab_py_env" # Change it for your own Python ENV
 )
 Sys.setenv(RETICULATE_PYTHON = rgee_environment_dir)
 Sys.setenv(EARTHENGINE_PYTHON = rgee_environment_dir)
