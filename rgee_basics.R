@@ -44,7 +44,7 @@ p_load(raster,
 Sys.setenv(RETICULATE_PYTHON = "C:/Users/n_ram/.conda/envs/matlab_py_env/python.exe")
 
 p_load(rgee, geojsonio, remotes, reticulate, devtools, googledrive)
-# install_github("r-spatial/rgee")
+install_github("r-spatial/rgee")
 
 ## sometimes at this point you are required to restart R or the computer before proceeding
 ## try restarting if the installation do not finish properly and run the installation again after restar
