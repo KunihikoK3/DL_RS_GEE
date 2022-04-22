@@ -291,7 +291,7 @@ ee_print(sentinel2_data)
 
 # plot one of them
 sentinel2_data_n = length(sentinel2_data$getInfo()$features)
-sentinel2_data_single = ee$Image(sentinel2_data$toList(sentinel2_data_n)$get(10)) # 0 to n
+sentinel2_data_single = ee$Image(sentinel2_data$toList(sentinel2_data_n)$get(17)) # 0 to n
 ee_print(sentinel2_data_single)
 Map$centerObject(ROI_feature, zoom = 9)
 Map$addLayer(eeObject = sentinel2_data_single,

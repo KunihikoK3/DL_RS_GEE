@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MD_Metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml">
+ <fileIdentifier>
+  <gco:CharacterString>Mapeamento de Arroz Irrigado (Inundação) do Rio Grande do Sul - Safra 2019/2020</gco:CharacterString>
+ </fileIdentifier>
+ <contact>
+  <CI_ResponsibleParty>
+   <individualName>
+    <gco:CharacterString>Titular de Gerência de Geotecnologias</gco:CharacterString>
+   </individualName>
+   <organisationName>
+    <gco:CharacterString>Companhia Nacional de Abastecimento - Conab, Produtor</gco:CharacterString>
+   </organisationName>
+   <positionName>
+    <gco:CharacterString>Gerente de Geotecnologias</gco:CharacterString>
+   </positionName>
+   <contactInfo>
+    <CI_Contact>
+     <phone>
+      <CI_Telephone>
+       <voice>
+        <gco:CharacterString>+55 (61) 3312-6280</gco:CharacterString>
+       </voice>
+       <facsimile>
+        <gco:CharacterString/>
+       </facsimile>
+      </CI_Telephone>
+     </phone>
+     <address>
+      <CI_Address>
+       <deliveryPoint>
+        <gco:CharacterString>SGAS 901 Bloco "A" Lote 69</gco:CharacterString>
+       </deliveryPoint>
+       <city>
+        <gco:CharacterString>Brasília - DF</gco:CharacterString>
+       </city>
+       <administrativeArea>
+        <gco:CharacterString/>
+       </administrativeArea>
+       <postalCode>
+        <gco:CharacterString>70390-010</gco:CharacterString>
+       </postalCode>
+       <country>
+        <gco:CharacterString>Brasil</gco:CharacterString>
+       </country>
+       <electronicMailAddress>
+        <gco:CharacterString>geote@conab.gov.br</gco:CharacterString>
+       </electronicMailAddress>
+      </CI_Address>
+     </address>
+     <onlineResource>
+      <CI_OnlineResource>
+       <linkage>
+        <URL>https://portaldeinformacoes.conab.gov.br/index.php/mapeamento?view=default</URL>
+       </linkage>
+       <protocol>
+        <gco:CharacterString/>
+       </protocol>
+       <name>
+        <gco:CharacterString>shapefile</gco:CharacterString>
+       </name>
+       <description>
+        <gco:CharacterString/>
+       </description>
+      </CI_OnlineResource>
+     </onlineResource>
+     <hoursOfService>
+      <gco:CharacterString/>
+     </hoursOfService>
+     <contactInstructions>
+      <gco:CharacterString/>
+     </contactInstructions>
+    </CI_Contact>
+   </contactInfo>
+   <role>
+    <CI_RoleCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#CI_RoleCode" codeListValue="resourceProvider">autor e produtor</CI_RoleCode>
+   </role>
+  </CI_ResponsibleParty>
+ </contact>
+ <dateStamp>
+  <gco:Date>2020-06-15</gco:Date>
+ </dateStamp>
+ <dataSetURI>
+  <gco:CharacterString/>
+ </dataSetURI>
+ <locale>
+  <PT_Locale>
+   <language>
+    <LanguageCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#LanguageCode" codeListValue="EN"/>
+   </language>
+   <country>
+    <CountryCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#CountryCode" codeListValue="ZA"/>
+   </country>
+   <characterEncoding>
+    <MD_CharacterSetCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+   </characterEncoding>
+  </PT_Locale>
+ </locale>
+ <spatialRepresentationInfo>
+  <MD_GridSpatialRepresentation>
+   <numberOfDimensions>
+    <gco:Integer>2</gco:Integer>
+   </numberOfDimensions>
+   <cellGeometry>
+    <MD_CellGeometryCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#MD_CellGeometryCode" codeListValue="area"/>
+   </cellGeometry>
+   <transformationParameterAvailability>
+    <gco:Boolean/>
+   </transformationParameterAvailability>
+  </MD_GridSpatialRepresentation>
+  <MD_Georeferenceable>
+   <numberOfDimensions>
+    <gco:Integer>2</gco:Integer>
+   </numberOfDimensions>
+   <axisDimensionProperties gco:nilReason="missing"/>
+   <cellGeometry>
+    <MD_CellGeometryCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#MD_CellGeometryCode" codeListValue="point"/>
+   </cellGeometry>
+   <transformationParameterAvailability gco:nilReason="missing"/>
+   <controlPointAvailability gco:nilReason="missing"/>
+   <orientationParameterAvailability gco:nilReason="missing"/>
+   <georeferencedParameters gco:nilReason="missing"/>
+  </MD_Georeferenceable>
+ </spatialRepresentationInfo>
+ <identificationInfo>
+  <MD_DataIdentification>
+   <citation>
+    <CI_Citation>
+     <title>
+      <gco:CharacterString>Mapeamento de Arroz Irrigado (Inundação) do Rio Grande do Sul - Safra 2019/2020</gco:CharacterString>
+     </title>
+     <date>
+      <CI_Date>
+       <date>
+        <gco:Date/>
+       </date>
+       <dateType>
+        <CI_DateTypeCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation">2020-06-15</CI_DateTypeCode>
+       </dateType>
+      </CI_Date>
+     </date>
+    </CI_Citation>
+   </citation>
+   <abstract>
+    <gco:CharacterString>Os dados do Instituto Rio Grandense do Arroz (Irga) e os mapeamentos anteriores de arroz irrigado por inundação foram usados como referências. Utilizaram-se as bandas espectrais 2, 3, 4 e 8 de 10 metros e 8a, 11 e 2 de 20 metros fornecidas pelo instrumento “MultiSpectral Instrument  - MSI”  a bordo dos satélites da Missão SENTINEL-2. Empregaram-se composições RGB – 4,3,2 (cor verdadeira) e 8,4,3 (falsa cor) de 10 metros e 8a,11,2 (agricultura) de 20 metros de resolução espacial. As imagens compreenderam os meses de agosto/2019 a maio/2020. Como suporte à identificação, utilizaram-se também imagens de alta resolução espacial disponíveis pelo software Google Earth Pro quando compatíveis com o ano-safra do mapeamento. O reconhecimento das áreas de arroz inundado foi realizado através de interpretação visual. Analisou-se o comportamento espectral dessas áreas de acordo com os estádios fenológicos. Durante o período de preparo do solo, a resposta espectral das áreas de arroz na imagem é tipicamente de solo exposto. No plantio, a resposta espectral das lavouras de arroz apresenta padrões característicos de inundação. No desenvolvimento, o comportamento espectral das lavouras de arroz com elevado vigor vegetativo se diferencia em relação a outras classes como pastagem, mata nativa e demais cultivos. Na maturação e colheita, verifica-se redução do vigor vegetativo em função da maturação e retirada da vegetação com a colheita. Analisaram-se ainda o relevo, o formato das áreas (geralmente retangular) e a presença de canais de irrigação. A vetorização foi realizada manualmente no software QGIS com base em imagens SENTINEL-2. A escala de mapeamento utilizada variou entre 1:2.000, maior escala, a 1:6.000, menor escala. O cálculo de área foi realizado através do software QGIS, função “$area” utilizando os Sistemas de Referência de Coordenada WGS 84 / UTM 21 e 22 S. A base municipal do IBGE de 2015 foi empregada para definir os limites entre municípios. Houve verificação do mapeamento em campo com auxílio de técnicos do Irga.</gco:CharacterString>
+   </abstract>
+   <language>
+    <gco:CharacterString>pt</gco:CharacterString>
+   </language>
+   <topicCategory>
+    <MD_TopicCategoryCode>agriculturaPecuaria</MD_TopicCategoryCode>
+   </topicCategory>
+   <extent>
+    <EX_Extent>
+     <geographicElement>
+      <EX_GeographicBoundingBox>
+       <westBoundLongitude>
+        <gco:Decimal>-57.573</gco:Decimal>
+       </westBoundLongitude>
+       <eastBoundLongitude>
+        <gco:Decimal>-49.7937</gco:Decimal>
+       </eastBoundLongitude>
+       <southBoundLatitude>
+        <gco:Decimal>-33.6734</gco:Decimal>
+       </southBoundLatitude>
+       <northBoundLatitude>
+        <gco:Decimal>-28.2542</gco:Decimal>
+       </northBoundLatitude>
+      </EX_GeographicBoundingBox>
+     </geographicElement>
+     <verticalElement>
+      <EX_VerticalExtent>
+       <minimumValue>
+        <gco:Real/>
+       </minimumValue>
+       <maximumValue>
+        <gco:Real/>
+       </maximumValue>
+       <verticalCRS>
+        <gml:VerticalCRS gml:id="id61">
+         <gml:description/>
+         <gml:identifier codeSpace="value_codeSpace"/>
+         <gml:name>SIRGAS2000</gml:name>
+         <gml:scope/>
+         <gml:verticalCS>
+          <gml:VerticalCS gml:id="id7">
+           <gml:description/>
+           <gml:identifier codeSpace="notyetdefined"/>
+           <gml:name/>
+           <gml:axis>
+            <gml:CoordinateSystemAxis gml:id="id142" gml:uom="uom">
+             <gml:description/>
+             <gml:identifier codeSpace="value_codeSpace"/>
+             <gml:name/>
+             <gml:axisAbbrev/>
+             <gml:axisDirection codeSpace="value_codeSpace"/>
+             <gml:minimumValue/>
+             <gml:maximumValue/>
+             <gml:rangeMeaning codeSpace="value_codeSpace"/>
+            </gml:CoordinateSystemAxis>
+           </gml:axis>
+          </gml:VerticalCS>
+         </gml:verticalCS>
+         <gml:verticalDatum>
+          <gml:VerticalDatum gml:id="id641">
+           <gml:description/>
+           <gml:identifier codeSpace="value_codeSpace"/>
+           <gml:name/>
+           <gml:scope/>
+          </gml:VerticalDatum>
+         </gml:verticalDatum>
+        </gml:VerticalCRS>
+       </verticalCRS>
+      </EX_VerticalExtent>
+     </verticalElement>
+    </EX_Extent>
+   </extent>
+  </MD_DataIdentification>
+ </identificationInfo>
+ <contentInfo>
+  <MD_ImageDescription>
+   <attributeDescription>
+    <gco:RecordType xlink:href="value_href"/>
+   </attributeDescription>
+   <contentType>
+    <MD_CoverageContentTypeCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#MD_CoverageContentTypeCode" codeListValue="image"/>
+   </contentType>
+   <dimension/>
+   <illuminationElevationAngle>
+    <gco:Real/>
+   </illuminationElevationAngle>
+   <illuminationAzimuthAngle>
+    <gco:Real>
+     <xsl-value-of select="$illuminationAzimuthAngle_v"/>
+    </gco:Real>
+   </illuminationAzimuthAngle>
+   <imagingCondition>
+    <MD_ImagingConditionCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#MD_ImagingConditionCode" codeListValue=""/>
+   </imagingCondition>
+   <imageQualityCode>
+    <MD_Identifier>
+     <authority>
+      <CI_Citation>
+       <title>
+        <gco:CharacterString/>
+       </title>
+       <date>
+        <CI_Date>
+         <date>
+          <gco:Date/>
+         </date>
+         <dateType>
+          <CI_DateTypeCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
+         </dateType>
+        </CI_Date>
+       </date>
+      </CI_Citation>
+     </authority>
+     <code>
+      <gco:CharacterString/>
+     </code>
+    </MD_Identifier>
+   </imageQualityCode>
+   <cloudCoverPercentage>
+    <gco:Real/>
+   </cloudCoverPercentage>
+   <processingLevelCode>
+    <MD_Identifier>
+     <authority>
+      <CI_Citation>
+       <title>
+        <gco:CharacterString/>
+       </title>
+       <date>
+        <CI_Date>
+         <date>
+          <gco:Date/>
+         </date>
+         <dateType>
+          <CI_DateTypeCode codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#CI_DateTypeCode" codeListValue="creation"/>
+         </dateType>
+        </CI_Date>
+       </date>
+      </CI_Citation>
+     </authority>
+     <code>
+      <gco:CharacterString/>
+     </code>
+    </MD_Identifier>
+   </processingLevelCode>
+   <compressionGenerationQuantity>
+    <gco:Integer/>
+   </compressionGenerationQuantity>
+   <triangulationIndicator>
+    <gco:Boolean/>
+   </triangulationIndicator>
+   <radiometricCalibrationDataAvailability>
+    <gco:Boolean/>
+   </radiometricCalibrationDataAvailability>
+   <cameraCalibrationInformationAvailability>
+    <gco:Boolean/>
+   </cameraCalibrationInformationAvailability>
+   <filmDistortionInformationAvailability>
+    <gco:Boolean/>
+   </filmDistortionInformationAvailability>
+   <lensDistortionInformationAvailability>
+    <gco:Boolean/>
+   </lensDistortionInformationAvailability>
+  </MD_ImageDescription>
+ </contentInfo>
+</MD_Metadata>

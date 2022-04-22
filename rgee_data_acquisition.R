@@ -29,7 +29,7 @@ p_load(raster,
        doParallel)
 
 # set working directory
-setwd("D:\\2_Projects\\7_Presentation_Classes\\27_Short_Course_IEEE_GRSS_ISPRS_GEE\\")
+setwd("D:\\Dropbox\\Desktop\\DL_RS_GEE\\Deep_learning_tutorial")
 
 # directory in the drive to save results (temporarily)
 drive_dir = "rgee_temp3"
@@ -41,11 +41,11 @@ dir.create(output_dir, showWarnings = FALSE)
 # set directory for your conda environment
 ## Change this to your environment directory as it was installed in the rgee_install_packages 
 ## if you forgot environment name, open anaconda prompt in windows, type in: conda env list
-rgee_environment_dir = "C:\\ProgramData\\Miniconda3\\envs\\rgee_py\\"
+rgee_environment_dir = "C:/Users/n_ram/.conda/envs/matlab_py_env/"
 
 # number of cores
 # to check number of cores in your computer type in detectCores(), then use that number minus one
-no_cores = 2
+no_cores = 6
 
 
 
@@ -72,10 +72,10 @@ install_github("r-spatial/rgee")
 ## try restarting if the installation do not finish properly and run the installation again after restar
 
 # set python
-reticulate::use_python(rgee_environment_dir, required=T)
+# reticulate::use_python(rgee_environment_dir, required=T)
 rgee::ee_install_set_pyenv(
   py_path = rgee_environment_dir, # Change it for your own Python PATH
-  py_env = "rgee_py" # Change it for your own Python ENV
+  py_env = "matlab_py_env" # Change it for your own Python ENV
 )
 Sys.setenv(RETICULATE_PYTHON = rgee_environment_dir)
 Sys.setenv(EARTHENGINE_PYTHON = rgee_environment_dir)
@@ -92,7 +92,7 @@ rgee::ee_Initialize(drive = T)
 
 # load field data
 # get these data from https://doi.org/10.5281/zenodo.5504554
-field_data = readOGR("1_Field\\ARROZ-RS_Safra_2019_2020\\RS_ARROZ_IRRIG_INUND_1920.shp")
+field_data = readOGR("ARROZ-RS_Safra_2019_2020\\RS_ARROZ_IRRIG_INUND_1920.shp")
 
 # lets filter these data to only one municipality, list municipalities and get only one
 unique(field_data$NM_MUNICIP)
@@ -224,6 +224,9 @@ ee_monitoring(eeTaskList = TRUE)
 ## this took here 1280s or 21.3 minutes
 
 # copy files to computer
+# If below code chunk is not working then rewrite to copy file from
+# Google drive to computer (assuming file actually exists in the Google drive; seems to be there)
+# Or try to find another Rgee example for ee_drive_to_local
 for (i in 1:(length(periods_extract)-1)) {
   # copy file from drive to computer (windows temp dir)
   fname = ee_drive_to_local(task = tasks[[i]])
@@ -234,7 +237,8 @@ for (i in 1:(length(periods_extract)-1)) {
 }
 
 # visualize 
-r=stack(paste0(output_dir, basename(fname)))
+# r=stack(paste0(output_dir, basename(fname)))
+r = stack("D:\\Dropbox\\Desktop\\DL_RS_GEE\\Deep_learning_tutorial\\2_Images\\sentinel2_data_2020-02.tif")
 r
 plot(r[[5]])
 
@@ -317,7 +321,7 @@ lines(field_data_convex, col="red")
 # to do the spatial sampling
 # https://www.rdocumentation.org/packages/spatstat/versions/1.64-1/topics/rSSI
 # example: https://rpubs.com/jguelat/sampling
-p_load(spatstat)
+library(spatstat)   # or try install.packages("spatstat") also install_github("spatstat/spatstat.data")
 
 # create window around the data
 p_load(maptools)
@@ -499,7 +503,7 @@ new_ext2 = new("Extent", xmin = 498245.263116387, xmax = 505747.971062663,
 # crop image to a smaller extent to predict - so its faster for this tutorial
 new_ext = new_ext1
 s2_stack_crop = crop(s2_stack, new_ext)
-
+plot(s2_stack_crop[[5]])
 
 # predict rice for the image
 system.time({
@@ -519,7 +523,7 @@ plotRGB(s2_stack_crop, r=1, g=2, b=3, main = "RGB", stretch= "lin",add=T)
 plot(field_data, add=T, border = "red")
 x11(width = 10, height = 10)
 plot(new_ext, asp=1)
-plot(s2_stack_classified, main = "RF", add=T)
+plot(s2_stack_classified, main = "RF", add=T)   # there is an offset between areas and polygons due to incorrect sptransform?
 plot(field_data, add=T)
 plot(field_data_convex, border="blue", add=T, lwd=2)
 
